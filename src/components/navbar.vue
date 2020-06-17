@@ -32,7 +32,7 @@
       </ul>
     </div>
   </nav> -->
-  <div class="pos-f-t">
+  <div class="pos-f-t body body-bg">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-white p-4">
       <h4 class="text-muted">Collapsed content</h4>
@@ -41,7 +41,7 @@
   </div>
   <nav class="navbar navbar-dark bg-white">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="text-dark">&#9776;</span>
+      <span class="text-dark font-size">&#9776;</span>
     </button>
   </nav>
 </div>
@@ -62,4 +62,10 @@ export default {
 
 
 <style scoped>
+.font-size{
+    font-size: 2rem;
+    
+    opacity: 75%;
+}
+.body{}
 </style>

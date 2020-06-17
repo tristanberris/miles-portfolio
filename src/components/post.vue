@@ -1,43 +1,51 @@
 <template>
-  <div class="post row justify-content-center">
-    <div class="card col-lg-5 col-md-12  d-flex align-items-center image-container pb-3" style>
+  <div class="post row justify-content-center mt-3 p-5">
+    <div class="card col-lg-5 col-md-12 d-flex align-items-center image-container pb-3" style>
       <div class="text-container">
-        <img
-          class="card-img-top image rounded image-size"
-          src="https://picsum.photos/200/200"
-          alt="Card image cap"
-        />
-        <div class="card-body centered middle text">Test</div>
+        <a href>
+          <img
+            class="card-img-top image rounded image-size thumbnail-image"
+            src="https://carbon-media.accelerator.net/0000000kpVi/cHttr0KvPT3c8zIHlNm2hb;crop(1502,952,1340,1005)/480x360/lossless.png?auto=webp"
+            alt="Card image cap"
+          />
+          <div class="card-body centered middle text">Illustration</div>
+        </a>
       </div>
     </div>
-    <div class="card col-lg-5 col-md-12 align-items-center image-container" style>
-     <div class="text-container">
-        <img
-          class="card-img-top image rounded image-size"
-          src="https://picsum.photos/200/200"
-          alt="Card image cap"
-        />
-        <div class="card-body centered middle text">Test</div>
+    <div class="card col-lg-5 col-md-12 align-items-center image-container pb-3" style>
+      <div class="text-container">
+        <a href>
+          <img
+            class="card-img-top image rounded image-size thumbnail-image"
+            src="https://carbon-media.accelerator.net/0000000kpVi/0R6y1YO1g8VcmA5cWw7JZE;crop(0,876,2983,2237)/460x345.png?auto=webp"
+            alt="Card image cap"
+          />
+          <div class="card-body centered middle text">Character Development</div>
+        </a>
       </div>
     </div>
-    <div class="card col-lg-5 col-md-12 align-items-center image-container" style>
+    <div class="card col-lg-5 col-md-12 align-items-center image-container pb-3" style>
       <div class="text-container">
-        <img
-          class="card-img-top image rounded image-size"
-          src="https://picsum.photos/200/200"
-          alt="Card image cap"
-        />
-        <div class="card-body centered middle text">Test</div>
+        <a href>
+          <img
+            class="card-img-top image rounded image-size thumbnail-image"
+            src="https://carbon-media.accelerator.net/0000000kpVi/5z34i4ETwB4dvP8eMsauIg;crop(449,204,704,528)/480x360.jpeg"
+            alt="Card image cap"
+          />
+          <div class="card-body centered middle text">Colour Studies</div>
+        </a>
       </div>
     </div>
-    <div class="card col-lg-5 col-md-12 align-items-center image-container" style>
+    <div class="card col-lg-5 col-md-12 align-items-center image-container pb-3" style>
       <div class="text-container">
-        <img
-          class="card-img-top image rounded image-size"
-          src="https://picsum.photos/200/200"
-          alt="Card image cap"
-        />
-        <div class="card-body centered middle text">Test</div>
+        <a href>
+          <img
+            class="card-img-top image rounded image-size thumbnail-image"
+            src="https://picsum.photos/480/360"
+            alt="Card image cap"
+          />
+          <div class="card-body centered middle text">Animations</div>
+        </a>
       </div>
     </div>
   </div>
@@ -59,14 +67,17 @@ export default {
 
 <style scoped>
 .text {
-  background-color: #555;
+  background-color: rgba(87, 87, 87, 0.924);
+
   color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
 .image-size {
-  height: 300px;
-  width: 500px;
+  /* height: 348px;
+  width: 460px; */
+  height: 100%;
+  width: 100%;
 }
 .card {
   border: none;
@@ -102,5 +113,14 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.thumbnail-image {
+  display: block;
+  /* height: 100%; */
+  left: 0;
+  /* opacity: 0; */
+  /* position: absolute; */
+  top: 0;
+ 
 }
 </style>
