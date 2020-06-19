@@ -2,14 +2,14 @@ import { dbContext } from "../db/DbContext";
 import { BadRequest } from "../utils/Errors";
 
 class PhotosService {
-  async find(query={}) {
-    let values = await dbContext.Photos.find(query);
-    return values;
-  }
+  // async find(query = {}) {
+  //   let values = await dbContext.Photos.find(query);
+  //   return values;
+  // }
   async getAll(req, res, next) {
     try {
-      let data = await dbContext.Photos.find();
-      return res.send(data);
+      return await dbContext.Photos.find();
+       
     } catch (error) {
       console.error(error);
     }
@@ -24,7 +24,9 @@ class PhotosService {
   async create(rawData) {
     let data = await dbContext.Photos.create(rawData)
     return data
-}
+  } catch(error) {
+    console.error(error);
+  }
 }
 
 export const photosService = new PhotosService();

@@ -8,9 +8,9 @@ export class PhotosController extends BaseController {
         super("api/photos");
         this.router
             .get("", this.getAll)
+            .post("", this.create);
             // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
             // .use(auth0provider.isAuthorized)
-            .post("", this.create);
     }
     async getAll(req, res, next) {
         try {
@@ -24,8 +24,9 @@ export class PhotosController extends BaseController {
     async create(req, res, next) {
         try {
             // NOTE NEVER TRUST THE CLIENT TO ADD THE CREATOR ID
-            req.body.creatorId = req.user.sub;
-            res.send(req.body);
+            // req.body.creatorId = req.user.sub;
+            let data =  await photosService.create(req.body);
+           return res.send(data)
         } catch (error) {
             next(error);
         }
