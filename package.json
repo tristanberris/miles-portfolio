@@ -1,27 +1,23 @@
 {
-  "name": "milesportfolio",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@bcwdev/auth0-vue": "0.0.14",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.4.1",
+    "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-router": "~4.4.0",
-    "@vue/cli-plugin-vuex": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "node-sass": "^4.14.1",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vue/cli-service": "^4.1.2",
+    "vue-template-compiler": "^2.5.17"
+  }
 }

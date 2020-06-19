@@ -2,7 +2,9 @@
   <div class="post row justify-content-center mt-3 p-5">
     <div class="card col-lg-5 col-md-12 d-flex align-items-center image-container pb-3" style>
       <div class="text-container">
-        <a href>
+          <router-link to="/Illustrations" >
+
+        <a href="">
           <img
             class="card-img-top image rounded image-size thumbnail-image"
             src="https://carbon-media.accelerator.net/0000000kpVi/cHttr0KvPT3c8zIHlNm2hb;crop(1502,952,1340,1005)/480x360/lossless.png?auto=webp"
@@ -10,6 +12,7 @@
           />
           <div class="card-body centered middle text">Illustration</div>
         </a>
+          </router-link>
       </div>
     </div>
     <div class="card col-lg-5 col-md-12 align-items-center image-container pb-3" style>
@@ -67,10 +70,10 @@ export default {
 
 <style scoped>
 .text {
-  background-color: rgba(87, 87, 87, 0.924);
+  /* background-color: rgba(87, 87, 87, 0.924); */
 
-  color: white;
-  font-size: 16px;
+  color: black;
+  font-size: 24px;
   padding: 16px 32px;
 }
 .image-size {
@@ -88,7 +91,7 @@ export default {
   backface-visibility: hidden;
 }
 .text-container:hover .image {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .text-container:hover .text {
   opacity: 1;

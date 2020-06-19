@@ -1,11 +1,12 @@
 <template>
   <div class="container-fluid body">
     <navbar class="pt-3"></navbar>
-    <h1 class="title-text">miles marcello hale</h1>
+    <h1 class="title-text">miles marcelo hale</h1>
     <div class="subtitle">Illustrator and Concept Artist</div>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <post></post>
     <footer>
+      <!-- icons -->
       <div class="row">
         <div class="col"></div>
       </div>
